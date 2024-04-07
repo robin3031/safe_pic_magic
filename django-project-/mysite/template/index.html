@@ -1,0 +1,39 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <style>
+        .main {
+            width: 1100px
+            background-color: red;
+            color: black;
+        }
+        </style>
+  </head>
+  <body>
+    <div class = "main">
+
+    <h1>WELCOME COUSTMER</h1>
+    <p>{{BDATA}}</p>
+    </div>
+  </body>
+<body>
+    {% for n in CLIST %}
+    <div>{{n}}</div>
+    {%endfor%}
+
+<br/>
+<table border = "1" , cellpadding = "10">
+<tr>
+  <th>Name</th>
+  <th>Age</th>
+</tr>
+{% comment %} */for new loop  {% endcomment %}
+{% for d in STUDENT_DETAILS %}
+<tr>
+  <td>{{d.name}}</td>
+  <td>{{d.age}}</td>
+</tr>
+{% endfor %}
+  </body>
+</html>
